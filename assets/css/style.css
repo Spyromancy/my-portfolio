@@ -1,0 +1,131 @@
+* {
+    margin:0;
+    padding:0;   
+}
+:root {
+    --primary-color: #cbf7ed;
+    --secondary-color: #1c1662;
+    --tertiary-color: #E54B4B;
+}
+body{
+    color:var(--primary-color);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #3d3d3d;
+}
+
+/*Header Styles*/
+header{
+    padding: 20px 35px 0px 35px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: var(--secondary-color);
+
+}
+header a{
+    text-decoration: none;
+}
+header h1 {
+    padding-bottom: 20px;
+}
+header nav{
+    display: flex;
+    position: relative;
+    bottom:0px;
+    align-items: flex-end;
+}
+header nav ul {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    list-style: none;
+}
+header nav ul li a{
+    color:var(--primary-color);
+    padding: 10px 15px 0px 15px;
+    font-size: 1.55vw;
+    align-items: flex-end;
+}
+
+/* Hero section styles */
+.hero{
+    padding:100px 0;
+    text-align: center;
+}
+/* About me section styles */
+
+/* My work section styles */
+.work{
+    display:inline;
+}
+.completed-work{
+    display:flex;
+    flex-wrap: wrap;
+}
+.main-card, .sub-card {
+    border: 5px solid var(--tertiary-color);
+}
+.main-card {
+    width: 70%;
+}
+.sub-card {
+    width: 35%;
+}
+/* Contact me section styles */
+
+
+/* Utility Classes */
+.flex-column {
+    display: flex;
+}
+.section-title {
+    font-size: 48px;
+    color: var(--primary-color);
+    display: block;
+    border-right: 1px solid var(--primary-color);
+    padding-right: 20px;
+    width:20%;
+    text-align: right;
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header{
+        padding-bottom:0;
+        justify-content: center;
+        position:relative;
+    }
+    header h1{
+        width:100%;
+        text-align: center;
+    }
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+    header nav ul li a {
+        font-size:20px;
+    }
+    footer h2, footer div {
+        text-align:center;
+        width: 100%;
+    }
+    .section-title{
+        width:80%;
+    }
+
+}
+/*MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+    section {
+        padding: 30px 15px;
+    }
+}
+/* MEDIA QUERY FOR MIBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+    .section-title {
+        width: 95%;
+    }
+}
